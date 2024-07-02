@@ -80,3 +80,20 @@ justify-content: center;
     background: #E2BBE9;
     width: 300px;
   }
+
+  @media all and (max-width: 800px){
+    .section{
+      flex-direction: column;
+    }
+    .menu{
+      flex-direction: column;
+      height: auto;
+    }
+    /* .menu div{
+      flex-basis: 100%;
+    } */
+    .logo, .nav, .social{
+      flex: 1 0 auto;
+      width: 100%;
+    }
+  }
