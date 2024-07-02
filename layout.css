@@ -103,3 +103,24 @@ justify-content: center;
       flex-direction: column;
     }
   }
+  body {
+    background-color: white; 
+}
+
+@media all and (min-width: 801px) {
+  body {
+      background-color: rgb(227, 240, 244); 
+  }
+}
+@media all and (min-width: 601px) and (max-width: 800px) {
+  body {
+      background-color: lightgreen; 
+  }
+}
+
+@media all and (max-width: 600px) {
+  body {
+      background-color: lightcoral; 
+  }
+}
+
