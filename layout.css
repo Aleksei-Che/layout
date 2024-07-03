@@ -21,12 +21,16 @@
     height: 100px;
     align-items: center;
 
-
   }
     .logo{
        background: #4CCD99;
        flex: 1 1 auto;
        height: 30px;
+       animation-name: mianimacion;
+       animation-duration: 0,5s;
+       position: relative;
+       animation-direction: normal;
+       animation-timing-function: ease;
     }
     .nav{
         background: #4CCD99;
@@ -37,6 +41,13 @@
         background: #4CCD99;
         flex: 1 1 auto;
         height: 30px;
+    }
+    .logo:hover {
+      background: #186445;
+      animation-name: hoverAnim;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
     }
   .texto-principal{
     background: #FFC700;
@@ -123,4 +134,31 @@ justify-content: center;
       background-color: lightcoral; 
   }
 }
+@keyframes mianimacion {
+  0% {
+      
+      transform: scale(1);
+      background-color: #4CCD99;
+  }
+
+  100% {
+      
+      transform: scale(1.2);
+      background-color: #4CCD99;
+  }
+}
+
+@keyframes hoverAnim {
+  0% {
+      transform: scale(1);
+      background-color: #4CCD99;
+  }
+
+  100% {
+      transform: scale(1.2);
+      background-color: #7cf182;
+  }
+}
+
+
 
